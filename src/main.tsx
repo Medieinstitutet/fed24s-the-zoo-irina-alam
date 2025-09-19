@@ -1,9 +1,10 @@
-import './index.css';
+import React from "react";
+import "./index.css";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
-import { RouterProvider } from "react-router-dom";
-import Home from ".src/Home.tsx";
-import AnimalPage from ".src/AnimalPage.tsx";
+import { RouterProvider, createBrowserRouter } from "react-router-dom"; // ← add createBrowserRouter
+import Home from "./Home.tsx";
+import AnimalPage from "./AnimalPage.tsx";
 
 const router = createBrowserRouter([
   {
